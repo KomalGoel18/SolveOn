@@ -17,10 +17,15 @@ import dashboardRoutes from "./routes/dashboardRoutes.js";
 dotenv.config();
 
 const app = express();
-app.use(cors({
-  origin: "https://code-camp-chi.vercel.app/",
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: [
+      "https://code-camp-chi.vercel.app",
+      "http://localhost:5173"
+    ],
+    credentials: true
+  })
+);
 
 app.use(express.json());
 
