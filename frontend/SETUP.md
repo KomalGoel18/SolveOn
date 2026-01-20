@@ -126,7 +126,7 @@ src/
    npm run dev
    ```
 
-   The application will be available at `http://localhost:5173`
+   The application will be available at `https://codecamp-backend-3mpe.onrender.com/api`
 
 5. **Build for Production**
    ```bash

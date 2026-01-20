@@ -27,7 +27,7 @@ const sampleProblems = [
       { input: "3\n3 2 4\n6\n", expectedOutput: "1 2\n" }
     ],
     hiddenTests: [
-      { input: "5\n1 3 2 5 4\n6\n", expectedOutput: "1 2\n" }
+      { input: "5\n1 3 2 5 4\n5\n", expectedOutput: "1 2\n" }
     ]
   },
   {

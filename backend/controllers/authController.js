@@ -98,7 +98,7 @@ export const forgotPassword = async (req, res) => {
     user.resetPasswordExpires = expires;
     await user.save();
 
-    const resetUrl = `${process.env.FRONTEND_URL || "http://localhost:5173"}/reset-password/${resetToken}`;
+    const resetUrl = `${process.env.FRONTEND_URL || "https://code-camp-chi.vercel.app/"}/reset-password/${resetToken}`;
 
     const message = `You requested a password reset. Use this link to reset your password (valid 1 hour):\n\n${resetUrl}`;
 

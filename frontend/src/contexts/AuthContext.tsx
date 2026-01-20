@@ -22,7 +22,7 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
-  const apiBase = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:5000/api";
+  const apiBase = import.meta.env.VITE_API_BASE_URL ?? "https://codecamp-backend-3mpe.onrender.com/api";
 
   // helper to read backend error shapes
   const parseError = async (res: Response) => {
