@@ -8,7 +8,11 @@ import User from "../models/User.js";
 import Problem from "../models/Problem.js";
 import Counter from "../models/Counter.js";
 
-const MONGO = process.env.MONGO_URI || "mongodb://localhost:27017/SolveOn";
+if (!process.env.MONGO_URI) {
+  throw new Error("MONGO_URI is not defined");
+}
+
+const MONGO = process.env.MONGO_URI;
 
 const sampleProblems = [
   {
