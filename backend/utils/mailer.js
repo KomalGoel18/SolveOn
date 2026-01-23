@@ -12,7 +12,7 @@ export default async function sendResetEmail(to, resetUrl) {
   });
 
   const info = await transporter.sendMail({
-    from: `"CodeCamp" <${process.env.SMTP_USER}>`,
+    from: `"SolveOn" <${process.env.SMTP_USER}>`,
     to,
     subject: "Password reset",
     html: `<p>Click the link to reset your password:</p><a href="${resetUrl}">${resetUrl}</a>`

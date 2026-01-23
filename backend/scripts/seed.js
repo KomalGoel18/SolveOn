@@ -8,7 +8,7 @@ import User from "../models/User.js";
 import Problem from "../models/Problem.js";
 import Counter from "../models/Counter.js";
 
-const MONGO = process.env.MONGO_URI || "mongodb://localhost:27017/codecamp";
+const MONGO = process.env.MONGO_URI || "mongodb://localhost:27017/SolveOn";
 
 const sampleProblems = [
   {
@@ -84,7 +84,7 @@ async function seed() {
     // import bcrypt is no longer needed here – you can remove that line
 // import bcrypt from "bcryptjs";
 
-const adminEmail = "admin@codecamp.local";
+const adminEmail = "admin@SolveOn.local";
 let admin = await User.findOne({ email: adminEmail });
 if (!admin) {
   admin = await User.create({

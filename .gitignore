@@ -28,4 +28,4 @@ dist-ssr
 
 # Environment & sensitive files
 .env
-CodeCamp_Collection.json
+SolveOn_Collection.json

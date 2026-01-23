@@ -107,7 +107,7 @@ export const forgotPassword = async (req, res) => {
       if (process.env.SMTP_HOST && process.env.SMTP_USER) {
         await sendMail({
           to: user.email,
-          subject: "Password reset for CodeCamp",
+          subject: "Password reset for SolveOn",
           text: message,
         });
         return res.json({ message: "Password reset email sent" });
