@@ -1,5 +1,5 @@
 // frontend/src/lib/api.ts
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://codecamp-backend-3mpe.onrender.com/api";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://solveon-backend.onrender.com";
 
 // Helper function to get auth token from localStorage
 export const getToken = (): string | null => {
