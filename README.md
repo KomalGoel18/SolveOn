@@ -185,8 +185,3 @@ Some routes require a valid JWT in the `Authorization: Bearer <token>` header.
 - Tailwind CSS is used for all styling, with a dark, gradient‑heavy design.
 
 For more detailed UI‑specific documentation and schema notes, see `frontend/SETUP.md`.
-
-## License
-
-This project is currently intended as a portfolio/demo application. Adjust licensing text as needed before public release.
-
